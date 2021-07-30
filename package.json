@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "purgecss": "^4.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "purgecss --css bootstrap.css --content index.html --out dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianthiely/BrianThiely_4_13072021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianthiely/BrianThiely_4_13072021/issues"
+  },
+  "homepage": "https://github.com/brianthiely/BrianThiely_4_13072021#readme"
+}
