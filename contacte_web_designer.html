@@ -7,17 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-	<script async src="./js/jquery-2.1.0.min.js"></script>
-	<script async src="./js/bootstrap.min.js"></script>
-	<script async src="./js/blocs.min.js"></script>
-	<script async src="./js/jqBootstrapValidation.js"></script>
-	<script async src="./js/formHandler.js"></script>
+	<script  src="./js/jquery-2.1.0.js" defer></script>
+	<script  src="./js/bootstrap.js" defer></script>
+	<script  src="./js/blocs.js" defer></script>
+	<script  src="./js/jqBootstrapValidation.js" defer></script>
+	<script  src="./js/formHandler.js" defer></script>
     <title>Contact - La Chouette Agence</title>
 
     
@@ -38,30 +38,28 @@
 <div class="page-container">
     
 <!-- bloc-0 -->
-<header class="bloc" id="bloc-0">
-	<div class="container bloc-sm">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" title="La Chouette Agence - Entreprise de Webdesign à Lyon" height="40" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html">Accueil</a>
-					</li>
-					<li>
-						<a href="../#bloc-4-portfolio">Nos réalisations</a>
-					</li>
-					<li>
-						<a class="tc-orange" href="contacte_web_designer.html"><strong>Contacter un Web designer</strong></a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+<header class="bloc container bloc-sm" id="bloc-0">
+	<nav class="navbar row">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="index.html"><img src="img-seo/la-chouette-agence.png" alt="Logo de La Chouette Agence | Agence Web Lyon "/></a>
+			<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+				<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+			<ul class="site-navigation nav navbar-nav">
+				<li>
+					<a href="index.html">Accueil</a>
+				</li>
+				<li>
+					<a href="#bloc-4-portfolio">Nos réalisations</a>
+				</li>
+				<li>
+					<a class="tc-orange" href="contacte_web_designer.html"><strong>Contacter un Web designer</strong></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 </header>
 <!-- bloc-0 END -->
 
@@ -70,7 +68,7 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="tc-white">
+				<h1 class="tc-white text-center">
 					Parlons web design !
 				</h1>
 				<p class="text-center mg-lg tc-white tight-width-whitespace">
@@ -88,29 +86,29 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate data-success-msg="Your message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate data-success-msg="Votre message a été envoyé avec succès." data-fail-msg="Désolé, il semble que notre serveur de messagerie ne réponde pas, désolé pour le désagrément !">
 					<div class="form-group">
 						<label>
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" placeholder="Indiquez votre nom et prénom" class="form-control" required />
 					</div>
 					<div class="form-group">
 						<label>
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input id="email" placeholder="Indiquez votre adresse mail" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
 						<label>
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<input class="form-control" placeholder="Indiquez par quel canaux vous nous avez connu" type="email" required id="input_504" />
 					</div>
 					<div class="form-group">
 						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label><textarea id="message" placeholder="Prenez votre temps pour nous décrire votre projet" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
@@ -128,7 +126,7 @@
 <!-- bloc-7 END -->
 
 <!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<a class="bloc-button btn scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 <!-- ScrollToTop Button END-->
 
 
@@ -167,6 +165,7 @@
 	</div>
 </footer>
 <!-- Footer - bloc-8 END -->
+
 </div>
 <!-- Principal conteneur END -->
     
